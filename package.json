@@ -1,5 +1,5 @@
 {
-  "name": "octto",
+  "name": "@forks.developing.today/octto",
   "version": "0.3.1",
   "description": "OpenCode plugin that turns rough ideas into designs through branch-based exploration",
   "main": "dist/index.js",
@@ -40,7 +40,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vtemian/octto.git"
+    "url": "https://github.com/developing-today-forks/octto.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "@opencode-ai/plugin": "1.0.223",

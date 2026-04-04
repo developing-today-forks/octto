@@ -132,10 +132,7 @@ describe("loadCustomConfig", () => {
   });
 
   it("should use defaults when top-level model is not set", async () => {
-    writeFileSync(
-      join(configDir, "octto.json"),
-      JSON.stringify({}),
-    );
+    writeFileSync(join(configDir, "octto.json"), JSON.stringify({}));
 
     const result = await loadCustomConfig(stubAgents, configDir);
 
