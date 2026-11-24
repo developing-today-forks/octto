@@ -3,12 +3,22 @@ version: 2
 updates:
   - package-ecosystem: npm
     directory: /
+    target-branch: feat/global-model-config
     schedule:
       interval: weekly
     open-pull-requests-limit: 10
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
 
   - package-ecosystem: github-actions
     directory: /
+    target-branch: feat/global-model-config
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"
